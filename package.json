@@ -1,0 +1,38 @@
+{
+	"name": "cartridge-base-module",
+	"version": "0.0.1",
+	"description": "Base module for the cartridge project",
+	"keywords": [
+		"gulp",
+		"dependency",
+		"cartridge",
+		"cartridge-module",
+		"cartridge-task"
+	],
+	"homepage": "https://github.com/cartridge/cartridge-base-module",
+	"bugs": {
+		"url": "https://github.com/cartridge/cartridge-base-module/issues"
+	},
+	"license": "MIT",
+	"author": "Code Computerlove <npm@codecomputerlove.co.uk>",
+	"main": "task.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cartridge/cartridge-base-module.git"
+	},
+	"scripts": {
+		"postinstall": "node scripts/postinstall.js",
+		"preuninstall": "node scripts/preuninstall.js",
+	    "test": "echo \"Error: no test specified\" && exit 0"
+	},
+	"dependencies": {
+		"cartridge-module-util": "^0.3.0",
+		"yargs": "^4.3.2"
+	},
+	"devDependencies": {
+		"chai": "1.10.0",
+		"chai-fs": "^0.1.0",
+		"fs-extra": "^0.26.7",
+		"mocha": "^2.4.5"
+	}
+}
