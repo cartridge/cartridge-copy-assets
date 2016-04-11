@@ -1,7 +1,7 @@
 {
 	"name": "cartridge-copy-assets",
-	"version": "0.0.1",
-	"description": "change this matt (im the package desc)",
+	"version": "0.1.1",
+	"description": "Copy module for the cartridge project",
 	"keywords": [
 		"gulp",
 		"dependency",
