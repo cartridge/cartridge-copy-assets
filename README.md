@@ -13,10 +13,10 @@ npm install cartridge-copy-assets --save-dev
 
 This module adds the following to a project:
 
-* copy-assets - This will run all of the copy tasks.
-* copy-assets:build - Copies your public folder to you build folder.
-* copy-assets:fonts - Copies your fonts over to your public folder.
-* copy-assets:media - Copies your media over to your public folder.
+* `gulp copy-assets` - This will run all of the copy tasks.
+* `gulp copy-assets:build` - Copies your public folder to you build folder.
+* `gulp copy-assets:fonts` - Copies your fonts over to your public folder.
+* `gulp copy-assets:media` - Copies your media over to your public folder.
 
 
 ## Config
