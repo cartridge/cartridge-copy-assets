@@ -15,21 +15,26 @@ module.exports = function(gulp, projectConfig, tasks) {
 	*	CONFIGURATION
 	* ---------------------*/
 
-	var TASK_NAME = 'base';
+	var TASK_NAME = 'copy-assets';
 
 	// Task Config
 	var taskConfig = require(path.resolve(process.cwd(), projectConfig.dirs.config, 'task.' + TASK_NAME + '.js'))(projectConfig);
-
+	var copyTasksArr = [];
 	/* --------------------
 	*	MODULE TASKS
 	* ---------------------*/
 
-	gulp.task(TASK_NAME, function () {
-		return gulp.src(taskConfig.src)
-			// Do task stuff here
-			.pipe()
-			.pipe(gulp.dest(projectConfig.paths.dest[TASK_NAME]));
+	Object.keys(taskConfig).forEach(function(key) {
+		gulp.task(TASK_NAME + ':' + taskConfig[key].taskName, function(){
+				return gulp.src([taskConfig[key].src + '**/*'])
+				.pipe(gulp.dest(taskConfig[key].dest));
+		});
+
+		copyTasksArr.push(TASK_NAME + ':' + taskConfig[key].taskName);
 	});
+
+
+	gulp.task(TASK_NAME, copyTasksArr);
 
 	/* --------------------
 	*	WATCH TASKS

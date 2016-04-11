@@ -1,7 +1,7 @@
 {
-	"name": "cartridge-base-module",
+	"name": "cartridge-copy-assets",
 	"version": "0.0.1",
-	"description": "Base module for the cartridge project",
+	"description": "change this matt (im the package desc)",
 	"keywords": [
 		"gulp",
 		"dependency",
@@ -9,24 +9,24 @@
 		"cartridge-module",
 		"cartridge-task"
 	],
-	"homepage": "https://github.com/cartridge/cartridge-base-module",
+	"homepage": "https://github.com/cartridge/cartridge-copy-assets",
 	"bugs": {
-		"url": "https://github.com/cartridge/cartridge-base-module/issues"
+		"url": "https://github.com/cartridge/cartridge-copy-assets/issues"
 	},
 	"license": "MIT",
 	"author": "Code Computerlove <npm@codecomputerlove.co.uk>",
 	"main": "task.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cartridge/cartridge-base-module.git"
+		"url": "https://github.com/cartridge/cartridge-copy-assets.git"
 	},
 	"scripts": {
 		"postinstall": "node scripts/postinstall.js",
 		"preuninstall": "node scripts/preuninstall.js",
-	    "test": "echo \"Error: no test specified\" && exit 0"
+			"test": "echo \"Error: no test specified\" && exit 0"
 	},
 	"dependencies": {
-		"cartridge-module-util": "^0.3.0",
+		"cartridge-module-util": "~0.4.0",
 		"yargs": "^4.3.2"
 	},
 	"devDependencies": {

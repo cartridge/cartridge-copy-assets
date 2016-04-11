@@ -7,12 +7,19 @@ var packageConfig = require('../package.json');
 var cartridgeUtil = require('cartridge-module-util')(packageConfig);
 var path          = require('path');
 
-var TASK_NAME = 'base';
+var TASK_NAME = 'copy-assets';
 
 // Transform function for adding paths
 function projectConfigAddPaths(config) {
-	config.paths.src[TASK_NAME]  = config.dirs.src  + '/example_dir/';
-	config.paths.dest[TASK_NAME] = config.dirs.dest + '/example_dir/';
+	config.paths.src[TASK_NAME] = {
+		fonts: config.dirs.src + '/fonts/',
+		media: config.dirs.src + '/media/'
+	};
+
+	config.paths.dest[TASK_NAME] = {
+		fonts: config.dirs.dest + '/fonts/',
+		media: config.dirs.dest + '/media/'
+	};
 
 	return config;
 }
