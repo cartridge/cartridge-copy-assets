@@ -30,6 +30,9 @@ module.exports = function(gulp, projectConfig, tasks) {
 				.pipe(gulp.dest(taskConfig[key].dest));
 		});
 
+		// Add the clean path for the generated styles
+		projectConfig.cleanPaths.push(taskConfig[key].dest);
+
 		copyTasksArr.push(TASK_NAME + ':' + key);
 	});
 
@@ -51,8 +54,6 @@ module.exports = function(gulp, projectConfig, tasks) {
 	*	CARTRIDGE TASK MANAGEMENT
 	* -----------------------------*/
 
-	// Add the clean path for the generated styles
-	projectConfig.cleanPaths.push(projectConfig.dirs.dest[TASK_NAME]);
 	// Add the task to the default list
 	tasks.default.push(TASK_NAME);
 	// Add the task to the watch list
