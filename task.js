@@ -52,7 +52,7 @@ module.exports = function(gulp, projectConfig, tasks) {
 	* -----------------------------*/
 
 	// Add the clean path for the generated styles
-	projectConfig.cleanPaths.push(projectConfig.paths.dest[TASK_NAME]);
+	projectConfig.cleanPaths.push(projectConfig.dirs.dest[TASK_NAME]);
 	// Add the task to the default list
 	tasks.default.push(TASK_NAME);
 	// Add the task to the watch list
