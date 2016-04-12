@@ -25,12 +25,12 @@ module.exports = function(gulp, projectConfig, tasks) {
 	* ---------------------*/
 
 	Object.keys(taskConfig).forEach(function(key) {
-		gulp.task(TASK_NAME + ':' + taskConfig[key].taskName, function(){
+		gulp.task(TASK_NAME + ':' + key, function() {
 				return gulp.src([taskConfig[key].src + '**/*'])
 				.pipe(gulp.dest(taskConfig[key].dest));
 		});
 
-		copyTasksArr.push(TASK_NAME + ':' + taskConfig[key].taskName);
+		copyTasksArr.push(TASK_NAME + ':' + key);
 	});
 
 

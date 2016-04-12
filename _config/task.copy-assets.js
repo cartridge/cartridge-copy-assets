@@ -9,12 +9,12 @@ function getTaskConfig(projectConfig) {
 				dest: projectConfig.dirs.build
 			},
 			fonts: {
-				src: projectConfig.paths.src['copy-assets'].fonts,
-				dest: projectConfig.paths.dest['copy-assets'].fonts
+				src: projectConfig.dirs.src + '/fonts/',
+				dest: projectConfig.dirs.dest + '/fonts/'
 			},
 			media: {
-				src: projectConfig.paths.src['copy-assets'].media,
-				dest: projectConfig.paths.dest['copy-assets'].media
+				src: projectConfig.dirs.src + '/media/',
+				dest: projectConfig.dirs.dest + '/media/'
 			}
 	};
 
