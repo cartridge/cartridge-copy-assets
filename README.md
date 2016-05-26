@@ -1,4 +1,4 @@
-# Cartridge Copy Assets[![Build Status](https://travis-ci.org/cartridge/cartridge-copy-assets.svg?branch=master)](https://travis-ci.org/cartridge/cartridge-copy-assets)
+# Cartridge Copy Assets [![Build Status](https://travis-ci.org/cartridge/cartridge-copy-assets.svg?branch=master)](https://travis-ci.org/cartridge/cartridge-copy-assets)
 
 > [Copy Assets](https://github.com/cartridge/cartridge-copy-assets) expansion pack for  [Cartridge](https://github.com/cartridge/cartridge)
 
