@@ -13,7 +13,7 @@ npm install cartridge-copy-assets --save-dev
 
 Copy tasks are defined in the `task.copy-assets.js` config file. Each key of the `taskConfig` object makes a new gulp task.
 
-The only predefined task, `copy-assets` runs all copy tasks at once.
+The only predefined task, `copy-assets`, runs all copy tasks at once.
 
 ### How to add new copy tasks
 To add a new copy task all you have to do is open `task.copy-assets.js` and then add a new key to the `taskConfig` object. For example:
@@ -27,7 +27,7 @@ var taskConfig = {
 };
 ```
 
-This will create the task for you as long as your `src` & `dest` directories are correct.
+This will create the copy task `fonts` for you as long as your `src` & `dest` directories are correct.
 
 Running `gulp copy-assets:fonts` will copy the contents of the path `fonts.src` to the path `fonts.dest`
 
