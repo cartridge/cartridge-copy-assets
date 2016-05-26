@@ -9,26 +9,18 @@ To use this module, you will need [cartridge-cli](https://github.com/cartridge/c
 npm install cartridge-copy-assets --save-dev
 ```
 
-## Tasks
+## Task Config
 
-This module adds the following to a project:
+Copy tasks are defined in the `task.copy-assets.js` config file. Each key of the `taskConfig` object makes a new gulp task.
 
-* `gulp copy-assets` - This will run all of the copy tasks.
-* `gulp copy-assets:build` - Copies your public folder to you build folder.
-* `gulp copy-assets:fonts` - Copies your fonts over to your public folder.
-* `gulp copy-assets:media` - Copies your media over to your public folder.
-
-
-## Config
-
-Once installed, the config file `task.copy-assets.js` is created and stored in the `_config` directory in the root of your cartridge project.
+The only predefined task, `copy-assets` runs all copy tasks at once.
 
 ### How to add new copy tasks
-To add a new copy task all you have to do is open `task.copy-assets.js` and then add a new key to the taskConfig object. For example:
+To add a new copy task all you have to do is open `task.copy-assets.js` and then add a new key to the `taskConfig` object. For example:
 
 ```
 var taskConfig = {
-		newCopyTask: {
+		fonts: {
 			src: 'path/to/src',
 			dest: 'path/to/dest'
 		}
@@ -36,6 +28,8 @@ var taskConfig = {
 ```
 
 This will create the task for you as long as your `src` & `dest` directories are correct.
+
+Running `gulp copy-assets:fonts` will copy the contents of the path `fonts.src` to the path `fonts.dest`
 
 * * *
 
