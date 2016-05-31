@@ -36,14 +36,5 @@ describe('As a gulpfile', function() {
 		it('should add the watch:copy-assets task to the watch group', function() {
 			expect(basicrunner.tasks.watch[0]).to.equal('watch:copy-assets');
 		});
-
-		// it('should add one clean path to the clean config', function() {
-		// 	expect(basicrunner.config.cleanPaths.length).to.equal(1);
-		// });
-		//
-		// it('should add the generated styles path to the clean config', function() {
-		// 	var relative = path.relative(process.cwd(), basicrunner.config.cleanPaths[0]);
-		// 	expect(relative).to.equal('build');
-		// });
 	});
 });
