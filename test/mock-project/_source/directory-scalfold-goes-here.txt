@@ -1,3 +1,0 @@
-This should mirror the directory structure of _source. 
-
-Only needs to contains files relevant to the module.
