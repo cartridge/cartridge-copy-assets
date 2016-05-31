@@ -8,12 +8,10 @@ env:
 install:
     - npm install
     - npm install mocha -g
-    - npm install gulp-cli -g
 script:
     - mocha
 cache:
   directories:
     - node_modules
-    # - test/mock-project/node_modules
 git:
   depth: 1
