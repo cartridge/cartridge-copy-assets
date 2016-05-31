@@ -9,6 +9,14 @@ To use this module, you will need [cartridge-cli](https://github.com/cartridge/c
 npm install cartridge-copy-assets --save-dev
 ```
 
+## Maintainers
+
+| Name          | Github Profile                  |
+| ------------- |---------------------------------|
+| Matthew Claffey  | [code-mattclaffey](https://github.com/code-mattclaffey) |
+| Tristan Ashley  | [tawashley](https://github.com/tawashley) |
+
+
 ## Task Config
 
 Copy tasks are defined in the `task.copy-assets.js` config file. Each key of the `taskConfig` object makes a new gulp task.
