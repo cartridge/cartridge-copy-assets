@@ -9,7 +9,7 @@ var path = require('path');
 // Module dependencies
 
 
-module.exports = function(gulp, projectConfig, tasks) {
+module.exports = function copyAssetsModule(gulp, projectConfig, tasks) {
 
 	/* --------------------
 	*	CONFIGURATION
@@ -24,8 +24,8 @@ module.exports = function(gulp, projectConfig, tasks) {
 	*	MODULE TASKS
 	* ---------------------*/
 
-	Object.keys(taskConfig).forEach(function(key) {
-		gulp.task(TASK_NAME + ':' + key, function() {
+	Object.keys(taskConfig).forEach(function loopThroughConfig(key) {
+		gulp.task(TASK_NAME + ':' + key, function copyTask() {
 			return gulp.src([taskConfig[key].src])
 				.pipe(gulp.dest(taskConfig[key].dest));
 		});
@@ -43,7 +43,7 @@ module.exports = function(gulp, projectConfig, tasks) {
 	*	WATCH TASKS
 	* ---------------------*/
 
-	gulp.task('watch:' + TASK_NAME, function () {
+	gulp.task('watch:' + TASK_NAME, function copyWatchTask() {
 		gulp.watch(
 			taskConfig.watch,
 			[TASK_NAME]
