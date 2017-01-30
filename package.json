@@ -1,6 +1,6 @@
 {
   "name": "cartridge-copy-assets",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Copy module for the cartridge project",
   "keywords": [
     "gulp",
