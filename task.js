@@ -26,7 +26,7 @@ module.exports = function(gulp, projectConfig, tasks) {
 
 	Object.keys(taskConfig).forEach(function(key) {
 		gulp.task(TASK_NAME + ':' + key, function() {
-			return gulp.src([taskConfig[key].src + '**/*'])
+			return gulp.src([taskConfig[key].src])
 				.pipe(gulp.dest(taskConfig[key].dest));
 		});
 
