@@ -9,11 +9,11 @@ function getTaskConfig(projectConfig) {
 		// 	dest: projectConfig.dirs.build
 		// },
 		// fonts: {
-		// 	src: projectConfig.dirs.src + '/fonts/',
+		// 	src: projectConfig.dirs.src + '/fonts/**/*',
 		// 	dest: projectConfig.dirs.dest + '/fonts/'
 		// },
 		// media: {
-		// 	src: projectConfig.dirs.src + '/media/',
+		// 	src: projectConfig.dirs.src + '/media/**/*',
 		// 	dest: projectConfig.dirs.dest + '/media/'
 		// }
 	};
