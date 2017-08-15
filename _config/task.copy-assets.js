@@ -4,10 +4,6 @@
 
 function getTaskConfig(projectConfig) {
 	var taskConfig = {
-		// build: {
-		// 	src: projectConfig.dirs.dest,
-		// 	dest: projectConfig.dirs.build
-		// },
 		// fonts: {
 		// 	src: projectConfig.dirs.src + '/fonts/**/*',
 		// 	dest: projectConfig.dirs.dest + '/fonts/'
