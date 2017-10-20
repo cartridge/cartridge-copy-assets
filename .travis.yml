@@ -1,17 +1,26 @@
-sudo: false
 language: node_js
-node_js:
-    - stable
-    - '0.12'
-env:
-   - NODE_ENV=development
-install:
-    - npm install
-    - npm install mocha -g
-script:
-    - mocha
+sudo: false
 cache:
   directories:
     - node_modules
-git:
-  depth: 1
+    - ~/.npm
+notifications:
+  email: false
+node_js:
+  - '8'
+  - '6'
+  - '4'
+env:
+  - NODE_ENV=development
+install:
+  - npm install
+  - npm install mocha -g
+script:
+  - mocha
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
