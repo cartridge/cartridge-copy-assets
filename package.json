@@ -1,6 +1,6 @@
 {
   "name": "cartridge-copy-assets",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Copy module for the cartridge project",
   "keywords": [
     "gulp",
@@ -23,7 +23,7 @@
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
     "preuninstall": "node scripts/preuninstall.js",
-	"test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
     "cartridge-module-util": "~0.4.0",
