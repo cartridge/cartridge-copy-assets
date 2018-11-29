@@ -1,6 +1,6 @@
 {
   "name": "cartridge-copy-assets",
-  "version": "0.0.0-development",
+  "version": "2.0.0",
   "description": "Copy module for the cartridge project",
   "keywords": [
     "gulp",
@@ -23,11 +23,7 @@
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
     "preuninstall": "node scripts/preuninstall.js",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "release": {
-    "branch": "master"
+	"test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
     "cartridge-module-util": "~0.4.0",
@@ -40,7 +36,6 @@
     "fs-extra": "^0.26.7",
     "ghooks": "^1.2.1",
     "mocha": "^5.2.0",
-    "semantic-release": "^8.2.0",
     "validate-commit-msg": "^2.6.0"
   },
   "config": {
